@@ -1,0 +1,25 @@
+{
+  "name": "copperfield-hilite",
+  "displayName": "copperfield-hilite",
+  "description": "syntaxhighlighter for copperfield",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "copperfield",
+      "aliases": ["copperfield", "copperfield"],
+      "extensions": [".cf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "copperfield",
+      "scopeName": "source.cf",
+      "path": "./syntaxes/copperfield.tmLanguage.json"
+    }]
+  }
+}
